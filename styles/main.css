@@ -156,13 +156,13 @@ header {
 	font-size: 60px;
 	color: #FFFFFF;
 	margin-top: 0;
-	margin-bottom: 7px;
+	margin-bottom: 12px;
 }
 .banner-title span {
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	font-weight: 600px;
+	font-weight: 600;
 	background-color: #F37335;
 	border-radius: 14px;
 	text-align: center;
@@ -176,10 +176,10 @@ header {
 	font-size: 15px;
 	font-weight: 400;
 	color: #FAF9F9;
-	line-height: 1.8;
-	max-width: 328px;
+	line-height: 1.6;
+	max-width: 353px;
 	margin-top: 0;
-	margin-bottom: 31px;
+	margin-bottom: 35px;
 }
 .banner-link {
 	color: #1E2F40;
@@ -192,6 +192,7 @@ header {
 	text-transform: uppercase;
 	background-color: #FBB731;
 	border: 1px solid #FBB731;
+	transition: background .2s linear, color .2s linear;
 }
 .banner-link:hover {
 	background-color: transparent;
@@ -201,14 +202,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 44px;
+	margin-bottom: 35px;
 }
 .menu-title {
 	font-weight: 700;
 	font-size: 44px;
 	color: #1B2A49;
 	text-transform: uppercase;
-	margin-bottom: 34px;
+	margin: 0px;
 	
 }
 .menu-select {
@@ -225,6 +226,7 @@ header {
 	background-size: 12.79px 7.75px;
 	background-repeat: no-repeat;
 	background-position: 89% center;
+	background-color: #FFFFFF;
 }
 .menu-grid {
 	display: grid;
@@ -232,9 +234,6 @@ header {
 	gap: 50px 20px;
 	text-align: center;
 	margin-bottom: 100px;
-}
-.menu-grid-item {
-	margin-top: px;
 }
 .menu-grid-cover {
 	width: 100%;
@@ -254,13 +253,14 @@ header {
 	font-weight: 600;
 	font-size: 30px;
 	margin-top: 22px;
+	margin-bottom: 0;
 }
 .menu-grid-price {
 	font-weight: 700;
 	font-size: 20px;
 	color: #979797;
-	margin-bottom: 20px;
-	margin-top: -25px;
+	margin-bottom: px;
+	margin-top: 10px;
 }
 .menu-grid-btn {
 	display: flex;
@@ -289,6 +289,11 @@ header {
 	display: block;
 	width: 18px;
 	height: 18px;
+}
+.menu-grid-text {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 .footer {
 	background: #1E2F40;
