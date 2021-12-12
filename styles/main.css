@@ -17,6 +17,12 @@ header {
 	justify-content: space-between;
 	padding: 26px 0;
 }
+.header-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-basis: 77%;
+}
 .header-logo {
 	display: block;
 	background-image: url(../images/logo.svg);
@@ -37,7 +43,7 @@ header {
 	font-size: 20px;
 	color: #443737;
 	text-decoration: none;
-	gap: 40px
+	gap: 40px;
 }
 .header-nav a:hover {
 	color: #FFC725;
@@ -180,12 +186,17 @@ header {
 	color: #1E2F40;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 20px 25px;
+	padding: 18px 25px;
 	border-radius: 5px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	background-color: #FBB731;
+	border: 1px solid #FBB731;
+}
+.banner-link:hover {
+	background-color: transparent;
+	color: #FBB731;
 }
 .menu-header {
 	display: flex;
@@ -262,6 +273,14 @@ header {
 	border-radius: 5px;
 	padding: 10px 30px;
 	margin: 0 auto;
+	cursor: pointer;
+}
+.menu-grid-btn:hover {
+	border: 1px solid #1E2F40;
+	background-color: #F37335;
+	color: #FFFFFF;
+	padding: 8px 28px;
+	transition: background .2s linear, color .2s linear;	
 }
 .menu-grid-icon {
 	background-image: url(../images/cart-menu.svg);
@@ -295,7 +314,7 @@ header {
 	margin-bottom: 19px;
 	margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
 	margin-bottom: 9px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
@@ -303,7 +322,7 @@ header {
 	font-weight: 700;
 	line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
 	color: #DEDEDE;
 	text-decoration: none;
 	font-weight: 400;
@@ -314,19 +333,27 @@ header {
 	font-weight: 400;
 	margin-bottom: 2px;
 }
-.footer-tel ul {
-	font-size: 20px;
-	font-weight: 900;
-	color: #FBB731;
+.footer-list-tel {
 	margin-top: 0;
 }
-.footer-tel li {
+.footer-list-tel li {
 	margin-bottom: 12px;
+}
+.footer-list-tel a {
+	font-size: 20px;
+	font-weight: 900;
+	color: #FBB731;	
+}
+.footer-list-tel a:hover {
+	color: #FFFFFF;
 }
 .footer-list {
 	padding-left: 0;
 	padding-top: 3px;
-	list-style-type: none;
+	list-style-type: none;	
+}
+.footer-list a:hover {
+	color: #FBB731;
 }
 
 
