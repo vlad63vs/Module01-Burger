@@ -344,7 +344,7 @@ header {
 	font-weight: 900;
 	color: #FBB731;	
 }
-.footer-list-tel a:hover {
+.footer-list.footer-list-tel a:hover {
 	color: #FFFFFF;
 }
 .footer-list {
