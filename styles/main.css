@@ -36,7 +36,7 @@ header {
 	display: flex;
 	padding-left: 0;
 	gap: 80px;
-	line-height: 1.2;
+	line-height: 1.2;	
 }
 .header-nav a {
 	font-weight: 600;
@@ -44,6 +44,7 @@ header {
 	color: #443737;
 	text-decoration: none;
 	gap: 40px;
+	transition: 0.2s;
 }
 .header-nav a:hover {
 	color: #FFC725;
@@ -112,6 +113,7 @@ header {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
+	transition: 0.2s;
 }
 .breadcrumbs a:hover {
 	color: #FFC725;
@@ -149,7 +151,7 @@ header {
 	background-size: cover;
 	background-position: center center;
 	padding: 100px 100px 120px;
-	margin-bottom: 100px;	
+	margin-bottom: 80px;	
 }
 .banner-title {
 	font-weight: 900;
@@ -197,6 +199,9 @@ header {
 .banner-link:hover {
 	background-color: transparent;
 	color: #FBB731;
+}
+.menu {
+	padding-top: 20px;
 }
 .menu-header {
 	display: flex;
@@ -274,13 +279,14 @@ header {
 	padding: 10px 30px;
 	margin: 0 auto;
 	cursor: pointer;
+	transition: background .2s linear, color .2s linear;
 }
 .menu-grid-btn:hover {
 	border: 1px solid #1E2F40;
 	background-color: #F37335;
 	color: #FFFFFF;
 	padding: 8px 28px;
-	transition: background .2s linear, color .2s linear;	
+		
 }
 .menu-grid-icon {
 	background-image: url(../images/cart-menu.svg);
@@ -294,6 +300,7 @@ header {
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
+	color: #1E2F40;
 }
 .footer {
 	background: #1E2F40;
@@ -331,6 +338,7 @@ header {
 	color: #DEDEDE;
 	text-decoration: none;
 	font-weight: 400;
+	transition: 0.2s;
 }
 .footer-item span {
 	color: #DEDEDE;
@@ -347,7 +355,8 @@ header {
 .footer-list-tel a {
 	font-size: 20px;
 	font-weight: 900;
-	color: #FBB731;	
+	color: #FBB731;
+	transition: 0.2s;	
 }
 .footer-list.footer-list-tel a:hover {
 	color: #FFFFFF;
@@ -361,6 +370,29 @@ header {
 	color: #FBB731;
 }
 
+.button-up {
+	color: #1E2F40;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	background-color: #FBB731;
+	text-decoration: none;
+	padding: 5px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 5px;
+	transition: 1s;
+}
+.button-up:hover {
+	background-color: #F37335;
+}
+.button-up.hidden {
+	opacity: 0;
+}
+.button-up.visible {
+	opacity: 1;
+}
 /* Style INDEX */
 
 .main {
