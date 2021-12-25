@@ -204,7 +204,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 37px;
+	margin-bottom: 13px;
 }
 .menu-title {
 	font-weight: 700;
@@ -212,6 +212,7 @@ header {
 	color: #1B2A49;
 	text-transform: uppercase;
 	margin: 0;
+	margin-bottom: ;
 	
 }
 .menu-select {
@@ -653,10 +654,6 @@ header {
 	.button-up.visible {
 		display: none;
 	}
-}
-
-@media (max-width: 660px) {
-	
 }
 
 @media (max-width: 567px) {
