@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +24,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 	<header id="headerTop">
 		<div class="container">
@@ -40,7 +42,7 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
-				</div>				
+				</div>
 				<button type="button" class="button">
 					<span class="button-item">
 						<img src="images/cart.svg" alt="Корзина">
@@ -64,10 +66,10 @@
 	<main>
 		<div class="banner">
 			<div class="container">
-				<div class="banner-box">					
+				<div class="banner-box">
 					<h2 class="banner-title">
 						<span>скидка</span>
-						-30% 
+						-30%
 					</h2>
 					<p class="banner-text">Только при покупке 3-х и более позиций,
 						мы&nbsp;дарим скидку. Акции не суммируются.
@@ -204,55 +206,55 @@
 		</section>
 	</main>
 	<footer class="footer">
-      <div class="container">
+		<div class="container">
 			<div class="footer-box">
 				<div class="footer-item">
-               <img class="footer-logo" src="images/Logo-footer.svg" alt="Logo">
-            </div>
-            <div class="footer-item">
-               <h2>основные ссылки</h2>
-               <ul class="footer-list">
-                  <li><a href="menu.html">Меню</a></li>
-                  <li><a href="#">Заказ и Доставка</a></li>
-                  <li><a href="#">Методы оплаты</a></li>
-                  <li><a href="#">Контакты</a></li>
-               </ul>
+					<img class="footer-logo" src="images/Logo-footer.svg" alt="Logo">
+				</div>
+				<div class="footer-item">
+					<h2>основные ссылки</h2>
+					<ul class="footer-list">
+						<li><a href="menu.html">Меню</a></li>
+						<li><a href="#">Заказ и Доставка</a></li>
+						<li><a href="#">Методы оплаты</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
 					<ul class="footer-list footer-list-tel">
 						<li>
 							<a href="tel:+79007871313">+ 7 900 787 13-13</a>
 						</li>
-                  <li>
+						<li>
 							<a href="tel:+79007001414">+ 7 900 700 14-14</a>
 						</li>
-               </ul>
+					</ul>
 				</div>
-            <div class="footer-item">
-               <h2>основная информация</h2>
-               <ul class="footer-list">
-                  <li>
-                     <span>Время</span>
-                     ПН - ВС <br>
-                     11:00 - 22:00 без перерывов
-                  </li>
-                  <li>
-                     <span>Адрес</span>
-                     Москва, ул. Тверская, 5, вход со двора
-                  </li>
-               </ul>
-            </div>
-            <div class="footer-tel">
-               <ul class="footer-list footer-list-tel">
-                  <li>
+				<div class="footer-item">
+					<h2>основная информация</h2>
+					<ul class="footer-list">
+						<li>
+							<span>Время</span>
+							ПН - ВС <br>
+							11:00 - 22:00 без перерывов
+						</li>
+						<li>
+							<span>Адрес</span>
+							Москва, ул. Тверская, 5, вход со двора
+						</li>
+					</ul>
+				</div>
+				<div class="footer-tel">
+					<ul class="footer-list footer-list-tel">
+						<li>
 							<a href="tel:+79007871313">+ 7 900 787 13-13</a>
 						</li>
-                  <li>
+						<li>
 							<a href="tel:+79007001414">+ 7 900 700 14-14</a>
 						</li>
-               </ul>
-            </div>
-			</div>           
-      </div>
-   </footer>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
 	<div id="modal" class="modal">
 		<ul class="header-nav">
@@ -284,7 +286,7 @@
 
 		// Button Up
 
-		window.onscroll = function(){scrollFunction()};
+		window.onscroll = function () { scrollFunction() };
 
 		const upbuttons = document.querySelectorAll(".button-up");
 
@@ -293,16 +295,16 @@
 		}
 
 		function clickHandler(e) {
-		e.preventDefault();
-		const href = this.getAttribute("href");
+			e.preventDefault();
+			const href = this.getAttribute("href");
 
-		document.querySelector(href).scrollIntoView({
-			behavior: "smooth"
-		});
+			document.querySelector(href).scrollIntoView({
+				behavior: "smooth"
+			});
 		}
 
-		function scrollFunction(){
-			if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+		function scrollFunction() {
+			if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
 				document.getElementById('btnUp').className = 'button-up visible';
 			} else {
 				document.getElementById('btnUp').className = 'button-up hidden';
@@ -321,4 +323,5 @@
 
 	</script>
 </body>
+
 </html>
