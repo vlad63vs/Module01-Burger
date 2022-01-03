@@ -93,7 +93,7 @@ header {
 	color: #FFFFFF;
 	background-image: url(../images/bg.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	padding: 57px 0;
 	margin-bottom: 140px;
 }
@@ -648,14 +648,23 @@ header {
 		gap: 21px;
 	}
 	.title {
-		font-size: 38px;
-		font-weight: 700;
+		font-size: 20px;
+		font-weight: 800;
 	}
 	.menu-other .container {
 		padding-right: 0;
 	}
 	.button-up.visible {
 		display: none;
+	}
+	.footer {
+		margin-top: 140px;
+	}
+	.footer-item {
+		margin-top: -24px;
+	}
+	.footer-logo {
+		margin-top: -3px;
 	}
 }
 
@@ -717,11 +726,11 @@ header {
 		padding: 10px 30px;
 	}
 	.menu-other {
-		height: 100vw;
+		height: 88vw;
 	}
 	
 	.menu-other .menu-grid {
-		padding-bottom: 24vw;
+		padding-bottom: 24px;
 	}
 	.menu-other .menu-grid-cover {
 		height: 56vw;
@@ -733,9 +742,15 @@ header {
 		flex: 0 0 38vw;
 	}
 	.footer {
-		margin-top: 20px;
+		margin-top: 42px;
 		padding-top: 60px;
 		padding-bottom: 60px;
+	}
+	.footer-logo {
+		margin-top: 27px;
+	}
+	.footer-item h2 {
+		margin-top: 41px;
 	}
 	.footer-list + .footer-list-tel {
 		display: none;
@@ -764,13 +779,47 @@ header {
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 505px) {
+	.menu-other {
+		height: 93vw;
+	}
+	.footer-item h2 {
+		margin-top: 41px;
+	}
+}
+
+@media (max-width: 447px) {
+	.menu-other {
+		height: 98vw;
+	}
+	.footer-item h2 {
+		margin-top: 41px;
+	}
+}
+}
+
+@media (max-width: 400px) {
+	.menu-other {
+		height: 103vw;
+	}
+	.footer-item h2 {
+		margin-top: 41px;
+	}
+}
+
+@media (max-width: 350px) {
+	.menu-other {
+		height: 108vw;
+	}
 	.menu-grid-title {
 		font-size: 13px;
 	}
 	.menu-grid-btn, 
 	.menu-grid-btn:hover {
 		padding: 8px 16px;
+	}
+	.footer-item h2 {
+		margin-top: 41px;
 	}
 }	
 
@@ -799,7 +848,7 @@ header {
 		margin-bottom: 30px;
 	}
 	.menu-other {
-		height: 123vh;
+		height: 63vh;
 	}
 	.menu-grid {
 		margin-bottom: 30px;
@@ -808,19 +857,24 @@ header {
 		height: 180px;
 	}
 	.footer {
-		margin-top: 60px;
+		margin-top: 61px;
 	}
 	.footer-item h2 {
 		font-size: 18px;
 		font-weight: 800;
-		margin-top: 48px;
+		margin-top: 41px;
 	}
 	.footer-list a {
 		font-size: 15px;
 		font-weight: 400;
 	}
+	.footer-tel {
+		grid-area: tel;
+		text-align: right;
+	}
 	.footer-list-tel a {
-		font-size: 18px;
+		font-size: 20px;
 		font-weight: 800;
+		letter-spacing: -0.5px;
 	}
 }
